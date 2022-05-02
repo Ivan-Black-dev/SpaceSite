@@ -9,11 +9,20 @@ def index():
         page = f.read()
     return page
 
-@app.route('/<filename>')
-def getfile(filename):
-    with open(filename, 'rb') as f:
+@app.route('/photo/<filename>')
+def photo(filename):
+    with open(f'photo\{filename}', 'rb') as f:
         page = f.read()
     return page
 
+
+@app.route('/asteroid/<filename>')
+def asteroid(filename):
+    print(filename)
+    with open(f'astr\{filename}', 'rb') as f:
+        page = f.read()
+    return page
+
+
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+    app.run()

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Photo</title>
+    <script type="text/javascript" src="http://127.0.0.1:5000/photo/photo.js"></script>
+    <style>
+    #ram{
+    margin: auto;
+    width: min-content;
+    height: 400px;
+    
+   }
+   
+   html{
+    background-image: url(https://wallbox.ru/wallpapers/main/201546/d33fe6d6f4b7687.jpg);
+    background-repeat: no-repeat;
+}
+
+
+   img{
+    max-width: auto;
+    height: 100%;
+    display: block;
+    border:  2px solid white;
+   }
+
+   #cont{
+    width: 400px;
+   }
+
+   body{
+       margin: auto;
+       width: min-content;
+       background-color: #1C1C1C;
+       color: #C1D9F9;
+       padding: 20px;
+       border-radius: 0px;
+   }
+
+
+   button{
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #2e4553;
+    border: 0px;
+}
+
+
+button:focus{
+    border: 2px grey solid;
+}
+
+button:hover{
+    border: 2px #5a89b9 solid;
+}
+
+   h1{
+    height: auto;
+    width: 100%;
+    text-align: center;
+   }
+
+   h3{
+    height: auto;
+    width: 100%;
+    text-align: center;
+   }
+
+   h5{
+    height: auto;
+    width: 100%;
+    text-align: center;
+   }
+    </style>
+</head>
+<body>
+
+    <h1 id="titl">Название картинки</h1>
+
+        <h5 id="date">date</h5>
+    <div id = "ram">
+        <img src = "" id="img">
+    </div>
+
+    <h3 margin="top: 20px" id="op">Описание картинки</h3>
+
+
+    <button onclick="main()">load new image</button>
+
+</body>
+</html>

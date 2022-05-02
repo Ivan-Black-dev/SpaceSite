@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid data</title>
+
+    <script type="text/javascript" src="http://127.0.0.1:5000/asteroid/asteroid.js"></script>
+    <style>
+
+
+div.astr{
+    height: min-content;
+    width: max-content;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #2e4553;
+    border: 1px #0A1c34 solid;
+
+
+    overflow: hidden; /* Fix for firefox and IE 10-11  */
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid; /* IE 10+ */
+    break-inside: avoid-column;
+
+}
+
+
+div.astr:hover{
+
+    border-color: #5a89b9;
+}
+
+
+input{
+    margin-left: 40%;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+div.form{
+    margin: auto;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+}
+
+html{
+    background-image: url(https://wallbox.ru/wallpapers/main/201546/d33fe6d6f4b7687.jpg);
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: auto;
+    width: min-content;
+    background-color: #0A1c34;
+    color: #C1D9F9; 
+    border-radius: 50px;   
+}
+
+h3{
+    text-align: center;
+}
+
+
+button{
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #2e4553;
+    border: 0px;
+}
+
+
+button:focus{
+    border: 2px grey solid;
+}
+
+button:hover{
+    border: 2px #5a89b9 solid;
+}
+
+div.cont{
+    
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    height: max-content;
+    width: min-content;
+    columns: auto 2;
+
+    /*background-color: black;*/
+}
+
+
+
+
+    </style>
+</head>
+<body onload="start()">
+    <div class="form">
+        <h3>Enter the date to find out which asteroids flew near the Earth on that day</h3>
+        <input type="date" id="date">
+        <button onclick="main()">Search</button>
+    </div>    
+    <div id="cont" class="cont">
+
+    </div>
+    
+</body>
+</html>

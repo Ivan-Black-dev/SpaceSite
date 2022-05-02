@@ -1,7 +1,10 @@
 const url = "https://api.nasa.gov/planetary/apod?api_key=SIr7JuFHbz0Kphrd1s1OEND6vSPBrliogAvpKvJj&count=1";
+const url1 = "https://api.countapi.xyz/update/ichernyy/space?amount=1";
 const xhr = new XMLHttpRequest();
 
 function main(){
+    //xhr.open('GET', url1);
+    //xhr.send()
     console.log('start');
     xhr.open('GET', url);
     xhr.responseType = 'json';

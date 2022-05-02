@@ -4,75 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    <script type="text/javascript" src="index.js"></script>
+    <title>Home</title>
     <style>
-    #ram{
-    width: min-content;
-    height: 400px;
-    
-   }
-   
-   img{
-    max-width: auto;
-    height: 100%;
-    display: block;
-    border:  2px solid white;
-   }
 
-   #cont{
-    width: 400px;
-   }
+html{
+    background-image: url(https://wallbox.ru/wallpapers/main/201546/d33fe6d6f4b7687.jpg);
+    background-repeat: no-repeat;
+}
 
-   body{
+body{
+       margin: auto;
+       width: 70%;
        background-color: #1C1C1C;
-       color: white;
+       color: #5a89b9;
+       padding: 20px;
+       border-radius: 0px;
    }
 
-   button{
-       height: 20px;
-       width: 100%;
-       margin-top: 20px;
-       margin-bottom: 40px;
-       text-align: center;
-   }
-
-   h1{
-    height: auto;
-    width: 100%;
+   
+h1{
+    font-size: 50px;
     text-align: center;
-   }
+}
 
-   h3{
-    height: auto;
-    width: 100%;
+h2{
     text-align: center;
-   }
+    font-size: 30px;
+}
 
-   h5{
-    height: auto;
-    width: 100%;
+button{
     text-align: center;
-   }
+    color: #5a89b9;
+    height: 30px;
+    width: max-content;
+    border-radius: 10px;
+    background-color: #2e4553;
+    border: 0px;
+    width: 45%;
+    margin: auto;
+}
 
 
+button:focus{
+    border: 2px grey solid;
+}
+
+button:hover{
+    border: 2px #5a89b9 solid;
+}
 
     </style>
 </head>
 <body>
-
-    <div id = "ram">
-        <h1 id="titl">Название картинки</h1>
-
-        <h5 id="date">date</h5>
-    
-        <img src = "" id="img">
-    
-        <h3 margin="top: 20px" id="op">Описание картинки</h3>
-
-
-        <button onclick="main()">load new image</button>
+    <div>
+        <h1><b>Hello!</b></h1>
+        <h2>This is an astronomical site, so far here you can get a 
+            random photo from the NASA database in the NASA photo section or 
+            find out information about asteroids in the Asteroid data section
+        </h2>
+    <div>
+            <a href="http://46.173.219.156:4999/photo/photo.html"><button>Photo NASA</button></a>
+            <a href="http://46.173.219.156:4999/astr/asteroid.html"><button>Asteroid data</button></a>   
     </div>
-
 </body>
 </html>
